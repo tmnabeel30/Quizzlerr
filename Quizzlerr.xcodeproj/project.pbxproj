@@ -60,8 +60,8 @@
 				5D964A7F244D07A200D268E2 /* SceneDelegate.swift */,
 				5D964A81244D07A200D268E2 /* ViewController.swift */,
 				5D964A83244D07A200D268E2 /* Main.storyboard */,
-				5D964A86244D07AA00D268E2 /* Assets.xcassets */,
 				5D964A88244D07AA00D268E2 /* LaunchScreen.storyboard */,
+				5D964A86244D07AA00D268E2 /* Assets.xcassets */,
 				5D964A8B244D07AA00D268E2 /* Info.plist */,
 			);
 			path = Quizzlerr;
@@ -287,6 +287,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3P3U576Q35;
 				INFOPLIST_FILE = Quizzlerr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3P3U576Q35;
 				INFOPLIST_FILE = Quizzlerr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

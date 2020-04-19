@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,83 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quizzlerr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background-Bubbles" translatesAutoresizingMaskIntoConstraints="NO" id="tlB-sF-5KL">
+                                <rect key="frame" x="0.0" y="794" width="414" height="102"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gdc-jf-Kfx">
+                                <rect key="frame" x="46" y="566" width="322" height="296"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hl6-V7-Eyn">
+                                        <rect key="frame" x="0.0" y="0.0" width="322" height="68"/>
+                                        <state key="normal" title="option 1" backgroundImage="Rectangle"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cnc-1l-Pvq">
+                                        <rect key="frame" x="0.0" y="76" width="322" height="68"/>
+                                        <state key="normal" title="option2" backgroundImage="Rectangle"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAD-qh-JX3">
+                                        <rect key="frame" x="0.0" y="152" width="322" height="68"/>
+                                        <state key="normal" title="option 1" backgroundImage="Rectangle">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpZ-1N-wea">
+                                        <rect key="frame" x="0.0" y="228" width="322" height="68"/>
+                                        <state key="normal" title="option 4" backgroundImage="Rectangle">
+                                            <color key="titleColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pngkit_jet-png_4793852" translatesAutoresizingMaskIntoConstraints="NO" id="NHu-fo-llj">
+                                <rect key="frame" x="-221" y="311" width="856" height="247"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="247" id="4Cc-ba-b6v"/>
+                                    <constraint firstAttribute="width" constant="856" id="U18-d3-6Br"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og5-Hd-4VH">
+                                <rect key="frame" x="46" y="77" width="322" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="187" id="gNp-bV-skJ"/>
+                                </constraints>
+                                <string key="text">A 70 kg woman pulls a 30 kg suitcase fitted with frictionless wheels along the ground by means of a strap. She exerts a force of magnitude 50 N at an angle of 40° above the horizontal, making the suitcase accelerate. Calculate the normal force exerted by the ground on the suitcase.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14509803921568626" green="0.17254901960784313" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tlB-sF-5KL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GcJ-xx-W54"/>
+                            <constraint firstItem="og5-Hd-4VH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="LPB-Qw-GNI"/>
+                            <constraint firstAttribute="bottom" secondItem="tlB-sF-5KL" secondAttribute="bottom" id="NFu-AS-n7D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="og5-Hd-4VH" secondAttribute="trailing" constant="46" id="R4v-Vw-qDH"/>
+                            <constraint firstItem="Gdc-jf-Kfx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="W2Z-tx-02m"/>
+                            <constraint firstItem="tlB-sF-5KL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WUx-el-Lxo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gdc-jf-Kfx" secondAttribute="trailing" constant="46" id="XhX-uw-m8i"/>
+                            <constraint firstItem="Gdc-jf-Kfx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="fhB-ZF-7sc"/>
+                            <constraint firstItem="NHu-fo-llj" firstAttribute="top" secondItem="og5-Hd-4VH" secondAttribute="bottom" constant="47" id="rVg-Ou-S3l"/>
+                            <constraint firstItem="NHu-fo-llj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zIw-ex-xPC"/>
+                            <constraint firstItem="Gdc-jf-Kfx" firstAttribute="top" secondItem="NHu-fo-llj" secondAttribute="bottom" constant="8" id="zXR-5j-ot6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background-Bubbles" width="352" height="102"/>
+        <image name="Rectangle" width="322" height="68"/>
+        <image name="pngkit_jet-png_4793852" width="856" height="889"/>
+    </resources>
 </document>
