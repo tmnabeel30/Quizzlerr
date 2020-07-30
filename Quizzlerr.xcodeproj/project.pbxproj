@@ -13,7 +13,7 @@
 		5D964A85244D07A200D268E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D964A83244D07A200D268E2 /* Main.storyboard */; };
 		5D964A87244D07AA00D268E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D964A86244D07AA00D268E2 /* Assets.xcassets */; };
 		5D964A8A244D07AA00D268E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D964A88244D07AA00D268E2 /* LaunchScreen.storyboard */; };
-		5DC0A9902451AFA000D36C4E /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC0A98F2451AFA000D36C4E /* QuestionBank.swift */; };
+		5D9A317524D26D9000B5DC33 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9A317424D26D9000B5DC33 /* QuestionBank.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		5D964A86244D07AA00D268E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D964A89244D07AA00D268E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D964A8B244D07AA00D268E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DC0A98F2451AFA000D36C4E /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		5D9A317424D26D9000B5DC33 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +61,11 @@
 				5D964A7D244D07A200D268E2 /* AppDelegate.swift */,
 				5D964A7F244D07A200D268E2 /* SceneDelegate.swift */,
 				5D964A81244D07A200D268E2 /* ViewController.swift */,
+				5D9A317424D26D9000B5DC33 /* QuestionBank.swift */,
 				5D964A83244D07A200D268E2 /* Main.storyboard */,
 				5D964A88244D07AA00D268E2 /* LaunchScreen.storyboard */,
 				5D964A86244D07AA00D268E2 /* Assets.xcassets */,
 				5D964A8B244D07AA00D268E2 /* Info.plist */,
-				5DC0A98F2451AFA000D36C4E /* QuestionBank.swift */,
 			);
 			path = Quizzlerr;
 			sourceTree = "<group>";
@@ -142,7 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D964A82244D07A200D268E2 /* ViewController.swift in Sources */,
-				5DC0A9902451AFA000D36C4E /* QuestionBank.swift in Sources */,
+				5D9A317524D26D9000B5DC33 /* QuestionBank.swift in Sources */,
 				5D964A7E244D07A200D268E2 /* AppDelegate.swift in Sources */,
 				5D964A80244D07A200D268E2 /* SceneDelegate.swift in Sources */,
 			);

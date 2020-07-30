@@ -15,21 +15,40 @@ class ViewController: UIViewController {
     @IBOutlet weak var option_3: UIButton!
     @IBOutlet weak var option_4: UIButton!
     
-    var questoinArray:[String] = ["a","b"]
-    var questionNumber:Int = 0
+    var questoinArray:[[String]] = QuestionBank.QuestionVariable.Question
+    var questionNumber:Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        QuestionText.text = questoinArray[0]
+        if (questoinArray.count-1)==0{
+            QuestionText.text = "No Question Available"
+            option_1.isHidden = true
+            option_2.isHidden = true
+            option_3.isHidden = true
+            option_4.isHidden = true
+        }else{
+            QuestionText.text = questoinArray[1][0]
+        }
     }
     @IBAction func optionSelected(_ sender: UIButton) {
         print(sender.tag)
         updateUI()
     }
     func updateUI() {
+        if questionNumber<(questoinArray.count - 1){
        questionNumber+=1
-        QuestionText.text = questoinArray[questionNumber]
+        QuestionText.text = questoinArray[questionNumber][0]
+        }else{
+            print("You are done",questionNumber)
+            QuestionText.text = "You are done for now"
+            QuestionText.font = UIFont(name: QuestionText.font.fontName, size: 30)
+            option_1.isHidden = true
+            option_2.isHidden = true
+            option_3.isHidden = true
+            option_4.isHidden = true
+            
+           
+        }
     }
-
 } 
 
