@@ -41,8 +41,20 @@ class ViewController: UIViewController {
     }
     @IBAction func optionSelected(_ sender: UIButton) {
         print(sender.tag)
-        updateUI()// execute UI to refresh
-    }
+         // This is for checking question
+        if let ansChose = sender.currentTitle{
+                if ansChose == questoinArray[questionNumber][1]{
+                    print("Sucessful")
+                    
+                }else{
+                    print("Wrong")
+            
+                }
+                updateUI()    // execute UI to refresh
+            }
+
+        }
+ 
     // function which Up date UI increase question no. and change options in UI
     func updateUI() {
         if questionNumber<(questoinArray.count - 1){
@@ -67,9 +79,7 @@ class ViewController: UIViewController {
             
            
         }
-        func checkTheAns() {
-            
-        }
+      
     }
 } 
 
