@@ -7,13 +7,14 @@
 //
 
 import Foundation
-
+// Stores all the question in container which can access from QuestionBank
 class QuestionBank{
     struct QuestionVariable {
         static var Question:[[String]] = [["",""],
-                                          ["Is force a vector quantity","yes"],
-                                          ["what is the formula for momentum","p=mv"],
-                                          ["what is the formula for force","F=ma"],
-                                          ["what is the formula for kinetic  enegy?","K=1/2mv^2"]]
+                                          ["Is force a vector quantity","yes","yes","no","IDK","wrong question"],
+                                          ["what is the formula for momentum","p=mv","yes","no","IDK","wrong question"],
+                                          ["what is the formula for force","F=ma","yes","no","IDK","wrong","yes"],
+                                          ["what is the formula for kinetic  enegy?","K=1/2mv^2","yes","no","IDK","wrong question","yes"]]
     }
 }
+
