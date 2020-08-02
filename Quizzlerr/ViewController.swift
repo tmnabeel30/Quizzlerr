@@ -46,22 +46,23 @@ class ViewController: UIViewController {
          // This is for checking question
         if let ansChose = sender.currentTitle{
                 if ansChose == questoinArray[questionNumber][1]{
-                    sender.backgroundColor = UIColor.red
+                    
                     print("Sucessful")
-                    ProgressHUD.showSucceed()
+                    ProgressHUD.colorAnimation = .white
+                    ProgressHUD.colorHUD = .systemBlue
+                    ProgressHUD.colorBackground = .systemBlue;                    ProgressHUD.showSucceed()
                     
-                     do   {
-                        
-                       
-                    }
-                    
-               
+                  
                 }else{
                     print("Wrong")
+                    ProgressHUD.colorAnimation = .white
+                    ProgressHUD.colorHUD = .red
+                    ProgressHUD.colorBackground = .red;
                     ProgressHUD.showFailed()
-            
+             
                 }
-                updateUI()    // execute UI to refresh
+                updateUI()// execute UI to refresh
+           
             }
 
         }
