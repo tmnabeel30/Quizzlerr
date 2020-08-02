@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class ViewController: UIViewController {
     @IBOutlet weak var QuestionText: UILabel!
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
     
     var questoinArray:[[String]] = QuestionBank.QuestionVariable.Question // takes variable from my QuestionBank swift file into array
     var questionNumber:Int = 1 // question 0th is a placeholder
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,10 +46,19 @@ class ViewController: UIViewController {
          // This is for checking question
         if let ansChose = sender.currentTitle{
                 if ansChose == questoinArray[questionNumber][1]{
+                    sender.backgroundColor = UIColor.red
                     print("Sucessful")
+                    ProgressHUD.showSucceed()
                     
+                     do   {
+                        
+                       
+                    }
+                    
+               
                 }else{
                     print("Wrong")
+                    ProgressHUD.showFailed()
             
                 }
                 updateUI()    // execute UI to refresh
@@ -65,6 +76,7 @@ class ViewController: UIViewController {
             option_2.setTitle(questoinArray[questionNumber][3], for: .normal)
             option_3.setTitle(questoinArray[questionNumber][4], for: .normal)
             option_4.setTitle(questoinArray[questionNumber][5], for: .normal)
+            
         }else{
             print("You are done",questionNumber)
             // this code gives a prompt when all questions are completed by user
